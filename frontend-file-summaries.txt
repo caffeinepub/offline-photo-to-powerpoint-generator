@@ -1,0 +1,18 @@
+{
+  "frontend/src/App.tsx": "Main application component managing photo state with localStorage persistence, providing add/remove functionality, and rendering the capture interface, photo list, and generation button with offline support.",
+  "frontend/src/components/Header.tsx": "Application header with branding and logo displaying the app name and tagline.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright notice and caffeine.ai attribution link.",
+  "frontend/src/components/PhotoUpload.tsx": "Photo upload component with drag-and-drop support, file preview, location name input, and validation.",
+  "frontend/src/components/PhotoList.tsx": "Grid display of added photos showing thumbnails, location names, timestamps, and delete functionality with numbered badges.",
+  "frontend/src/components/GenerateButton.tsx": "Download options component with two buttons for generating and downloading either PowerPoint or PDF presentations, featuring progress indicators and separate loading states for each format, displaying slide count based on 8 photos per slide.",
+  "frontend/src/lib/pptxGenerator.ts": "PowerPoint generation utility that dynamically loads pptxgenjs from CDN and creates fully editable .pptx files with two predefined template slides using background images (IMG_20260113_141006-1.jpg and IMG_20260113_140013-3.jpg) with transparent editable text boxes overlaid for every word including titles, labels, and values on both DeKriminators Inspection Report and Global Pest Solutions slides, followed by photo slides organized in a 4x2 grid layout (8 per slide) with editable location text boxes, no slide numbers, and offline download support.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend integration (placeholder for future server-side functionality).",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring a purple/blue primary color scheme for both light and dark modes.",
+  "frontend/src/components/PhotoCapture.tsx": "Photo capture component with three-tab interface (camera, single upload, bulk upload) featuring camera controls, preview, bulk photo selection with individual location name inputs, and validation using the useCamera hook.",
+  "frontend/src/lib/serviceWorkerRegistration.ts": "Service worker registration utility for enabling offline functionality and caching resources.",
+  "frontend/src/main.tsx": "Application entry point with React Query provider and service worker registration for offline support.",
+  "public/service-worker.js": "Service worker implementation for offline caching and resource management.",
+  "public/manifest.json": "PWA manifest file defining app metadata, icons, and display properties for installable web app.",
+  "frontend/index.html": "HTML entry point with PWA meta tags and manifest link for offline-capable web app.",
+  "frontend/src/lib/pdfGenerator.ts": "PDF generation utility that dynamically loads jsPDF from CDN and creates compressed PDF files by rendering two predefined template slides (DeKriminators Inspection Report and Global Pest Solutions) with text overlays as the first and second pages, followed by photo slides (8 photos per slide in 4x2 grid) to canvas, converting them to JPEG images, and assembling them into a downloadable PDF with offline support."
+}
